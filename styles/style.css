@@ -14,7 +14,6 @@ h2,
 h3 {
   text-align: center;
   margin: 0;
- ;
 }
 
 h1 {
@@ -36,19 +35,17 @@ p {
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
-  text-align: :center;
+  text-align: center;
 }
 
-.title-heading{
+.title-heading {
   margin: 100px 100px 50px 100px;
-  
 }
 
-.app-summary{
-  text-align:left;
+.app-summary {
+  text-align: left;
   padding-bottom: 20px;
   margin-top: 30px;
-  
 }
 
 .navigation-links {
@@ -67,15 +64,14 @@ p {
 }
 
 .contact-link,
-.app-links
- {
+.app-links {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
-.app-navigation-links{
-  margin-top:50px;
+.app-navigation-links {
+  margin-top: 50px;
 }
 
 .about-link {
@@ -83,15 +79,15 @@ p {
   border: 1px solid var(--primary-color);
 }
 
-.about-me-title{
-  margin-top:100px;
+.about-me-title {
+  margin-top: 100px;
 }
 
 .about-paragraphs {
   display: flex;
   margin: 30px 0;
-  font-size:18px;
-  text-align:center;
+  font-size: 18px;
+  text-align: center;
 }
 
 .contact-section {
@@ -109,41 +105,50 @@ p {
   text-decoration: underline;
 }
 
-@media(max-width:552px){
-    body{
-        margin: 0 auto;
-    }
+@media (max-width: 450px) {
+  .title-heading {
+    margin: 90px 0 50px 0;
+  }
+}
 
-  .title-heading h1{
-    font-size:80px;
+@media (max-width: 552px) {
+  .title-heading h1,
+  .about-me-title {
+    font-size: 80px;
   }
 
-  .title-heading h2{
-      font-size:40px;
-      text-align:left;
-      
+  .title-heading h2 {
+    font-size: 40px;
+    text-align: left;
   }
 
-  .title-heading h3{
-      font-size:20px
+  .title-heading h3,
+  .about-me-title h3 {
+    font-size: 20px;
   }
 
-  .navigation-links{
-      margin-top:-50px;
+  .navigation-links {
+    margin-top: -50px;
   }
 
-    .app-links {
-    display:block;
-    text-align:center;
-    }
-    .app-summary{
-        text-align:center;
-    }
-    p{
-        text-align:center;
-    }
+  .app-links {
+    display: block;
+    text-align: center;
+  }
+  .app-summary {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
 
-    .about-paragraphs{
-        display:none;
-    }
+  .about-paragraphs {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .app-picture {
+    padding-top: 40px;
+  }
 }
